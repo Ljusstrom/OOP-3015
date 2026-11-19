@@ -55,11 +55,8 @@ public class BorderPaneExample extends Application {
 
         Scene view2 = new Scene(layout2);
 
-        topButton.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                stage.setScene(view2);   // Change the scene to GridPane
-            }
+        topButton.setOnAction(event -> {
+            stage.setScene(view2);   // Change the scene to GridPane
         });
 
         // HBOX
